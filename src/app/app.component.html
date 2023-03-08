@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="table-responsive container-md mt-2">
+    <table class="table table-striped
+    table-hover	
+    table-borderless
+    table-primary
+    align-middle">
+      <thead class="table table-success table-striped">
+        <tr>
+          <th>Nombre del Monito</th>
+          <th>Estatus del Monito</th>
+          <th>Género del Monito</th>
+          <th>Imágen del Monito</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr class="table table-dark table-striped" *ngFor="let character of characters">
+          <td class="text-black text-center fw-bold fs-5">{{character.name}}</td>
+          <td class="text-black text-center fw-bold fs-5">{{character.status}}</td>
+          <td class="text-black text-center fw-bold fs-5">{{character.gender}}</td>
+          <td><img class="img-thumbnail rounded mx-auto d-block" [src]="character.image" alt="{{ character.name }}" /></td>
+        </tr>
+      </tbody>
+      <tfoot>
+
+      </tfoot>
+    </table>
+  </div>
+
+</div>
